@@ -1,5 +1,4 @@
 import pprint
-import json
 DELIMITER_CHAR = '1'
 DATA_CHAR = '0'
 ALLOWED_CHARS = {DELIMITER_CHAR, DATA_CHAR}
@@ -7,7 +6,7 @@ given_input = '0010001010001001010100101110101001001001110'
 
 
 def srl(n):
-    """Return the set of integers [1, n]"""
+    """Return the set of integers [0, n)"""
     return set(range(0, len(n)))
 
 
