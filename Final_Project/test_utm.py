@@ -11,12 +11,12 @@ def test_split_sections():
 
 def test_utm():
     u = UTM(given_input)
-    assert u.states == {1, 2}
+    assert u.states == {0, 1}
     assert len(u.tape_symbols) == 3
     assert len(u.alphabet) == 1
     assert u.eof_character == 3
     assert u.blank_character == 2
     assert u.num_transitions == 1
-    assert u.start_state == 1
-    assert u.accept_state == 2
-    assert u.reject_state == 1
+    assert u.start_state == 0
+    assert u.accept_state == 1
+    assert u.reject_state == 0
